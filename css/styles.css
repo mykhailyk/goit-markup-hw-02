@@ -1,16 +1,49 @@
+/*blue #2196F3 */
+/*black #000000 */
 
+:root {
+  --background-color: #ffffff;
+  --text-color: #000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
 
 .header {
 }
 .logo {
+  color: #2196f3;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 1.19;
+}
+.header-logo-add {
+  color: var(--text-color);
 }
 .header-nav {
 }
 .header-list {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-item {
 }
 .header-list-contacts {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .header-item-contacts {
 }
