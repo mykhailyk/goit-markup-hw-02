@@ -1,101 +1,192 @@
-/*blue #2196F3 */
-/*black #000000 */
+/*fill color #2F303A */
 
 :root {
   --background-color: #ffffff;
-  --text-color: #000;
+  --alternative-background-color: #2f303a;
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --alternative-text-color: #ffffff;
+  --active-color: #2196f3;
+  --main-font-family: 'Roboto', sans-serif;
+  --second-font-family: 'Raleway', sans-serif;
 }
 
 body {
+  font-family: var(--main-font-family);
   background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: "Roboto", sans-serif;
+  color: var(--master-text-color);
 }
-
-.header {
+.list {
+  list-style: none;
 }
-.logo {
-  color: #2196f3;
-  font-family: 'Raleway';
-  font-style: normal;
+.link {
+  text-decoration: none;
+}
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/*----------------header--------------------*/
+.header-logo {
+  color: var(--active-color);
+  font-family: var(--second-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .header-logo-add {
-  color: var(--text-color);
+  color: #000000;
 }
-.header-nav {
-}
-.header-list {
-  color: var(--text-color);
+.header-link {
+  color: var(--main-text-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.header-item {
+.current {
+  color: var(--active-color);
 }
-.header-list-contacts {
-  color: var(--text-color);
-  font-style: normal;
+.header-link:hover,
+.header-link:focus,
+.contacts-link:focus,
+.contacts-link:hover {
+  color: #2196f3;
+}
+.contacts-link {
+  color: var(--second-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-}
-.header-item-contacts {
+  letter-spacing: 0.02em;
 }
 .head {
+  background-color: var(--alternative-background-color);
 }
 .head-title {
+  color: var(--alternative-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .head-button {
+  font-family: inherit;
+  color: var(--alternative-text-color);
+  background-color: var(--active-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
-.hero {
+.head-button:hover,
+.head-button:focus {
+  background-color: #188ce8;
 }
+
+/*----------------body--------------------*/
 .hero-title {
-}
-.hero-list {
-}
-.hero-item {
-}
-.hero-body-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .hero-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-.photo {
-}
+
 .photo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-.photo-list {
-}
-.photo-item {
-}
+
 .team {
+  background-color: #f5f4fa;
 }
 .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-list {
 }
 .team-item {
+  background-color: var(--background-color);
 }
 .team-img {
 }
 .team-text-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-text {
+  color: var(--second-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
+/*----------------footer--------------------*/
 .footer {
+  background-color: var(--alternative-background-color);
 }
+.footer-logo {
+  color: var(--active-color);
+  font-family: var(--second-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer-logo-add {
+  color: var(--alternative-text-color);
+}
+
 .footer-link {
 }
 .adress {
 }
 .adress-list {
+  color: var(--alternative-text-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-.adress-item {
+.adress-link-map {
+  color: inherit;
 }
 .adress-link {
+  color: rgba(255, 255, 255, 0.6);
 }
