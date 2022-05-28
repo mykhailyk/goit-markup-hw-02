@@ -28,7 +28,6 @@ h5,
 h6 {
   margin: 0;
 }
-
 ul,
 ol {
   margin: 0;
@@ -126,14 +125,13 @@ img {
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
-
+/*----------------head--------------------*/
 .head {
   background-color: var(--alternative-background-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .head-title {
   color: var(--alternative-text-color);
   font-weight: 900;
@@ -162,7 +160,6 @@ img {
 .head-button:focus {
   background-color: #188ce8;
 }
-
 /*----------------body--------------------*/
 .hero-list {
   display: flex;
@@ -207,7 +204,6 @@ img {
 .team-title {
   margin-bottom: 50px;
 }
-
 .team {
   background-color: #f5f4fa;
 }
@@ -280,7 +276,6 @@ img {
 .adress-link:focus {
   color: #2196f3;
 }
-
 /*----------------portfolio--------------------*/
 .filter-list {
   display: flex;
@@ -303,12 +298,10 @@ img {
   cursor: pointer;
   padding: 6px 22px;
 }
-
 .filter-button-current {
   color: var(--alternative-text-color);
   background-color: var(--active-btn-color);
 }
-
 .filter-button:hover,
 .filter-button:focus {
   color: var(--alternative-text-color);
@@ -323,7 +316,6 @@ img {
 }
 .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
-
   margin: 15px;
 }
 .portfolio-text-wrapper {
